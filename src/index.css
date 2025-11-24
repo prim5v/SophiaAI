@@ -1,0 +1,117 @@
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+/* Custom styling for the app */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/* Markdown styling */
+.markdown-body {
+  color: inherit;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.markdown-body h1 {
+  font-size: 1.5em;
+}
+.markdown-body h2 {
+  font-size: 1.3em;
+}
+.markdown-body h3 {
+  font-size: 1.1em;
+}
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol {
+  margin-bottom: 1em;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.5em;
+}
+.markdown-body li {
+  margin-bottom: 0.25em;
+}
+.markdown-body ul > li {
+  list-style-type: disc;
+}
+.markdown-body ol > li {
+  list-style-type: decimal;
+}
+.markdown-body a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+.markdown-body blockquote {
+  border-left: 3px solid #4b5563;
+  padding-left: 1em;
+  color: #9ca3af;
+  margin: 1em 0;
+}
+.markdown-body pre {
+  margin: 1em 0;
+}
+.markdown-body code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  padding: 0.2em 0.4em;
+  background-color: rgba(110, 118, 129, 0.4);
+  border-radius: 3px;
+}
+.markdown-body pre > code {
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  background-color: transparent;
+}
+/* Typing animation */
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  animation: dot-typing 1.5s infinite linear;
+}
+@keyframes dot-typing {
+  0% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+}
